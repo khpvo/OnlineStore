@@ -9,7 +9,7 @@ function FeaturedProducts({products}) {
   return (
     <div className="container p-0">
       <div className="row">
-        {products.map((product) => (
+        {products.slice(2).map((product) => (
           <div className="col-sm-6 col-md-4 mb-3" key={product.id}>
             <Featured product={product} />
           </div>

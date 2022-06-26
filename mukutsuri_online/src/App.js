@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <div className="row mb-0">
+      <div className="row mb-5">
         <Navbar numberOfItemsInCart={cart.total_items} />
       </div>
       <div className="row mt-0">
