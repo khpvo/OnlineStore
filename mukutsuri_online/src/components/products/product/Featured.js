@@ -1,25 +1,29 @@
 import React from "react";
 
-function Featured({product}) {
+function Featured({ product }) {
   return (
     <div className="card">
       <div className="row g-0">
-        <div className="col-md-4">
+        <div className="col-md-6">
           <img
+            src={product.image.url}
             className="bd-placeholder-img"
             width="100%"
-            height="250"
+            height="100%"
             aria-label="Featured Product: Image"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
           />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-6">
           <div className="card-body">
             <h5 className="card-title">{product.name}</h5>
-            <p className="card-text">{product.description}</p>
+            <p
+              className="card-text"
+              dangerouslySetInnerHTML={{ __html: product.description }}
+            />
             <p className="card-text">
-              <small className="text-muted">30% off sale</small>
+              <small className="text-muted display-5">30% off sale</small>
             </p>
           </div>
         </div>

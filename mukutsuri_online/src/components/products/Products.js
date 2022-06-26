@@ -10,7 +10,7 @@ function Products({products, onAddToCart}) {
     <div className="container">
       <div className="row">
         {products.map((product) => (
-          <div className="col-sm-4 col-md-3" key={product.id}>
+          <div className="col-sm-4 col-md-3 mb-3" key={product.id}>
             <Product product={product} onAddToCart={onAddToCart} />
           </div>
         ))}

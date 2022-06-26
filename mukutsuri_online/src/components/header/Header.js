@@ -9,8 +9,8 @@ function Header() {
       </a>
 
       <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/" className="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="/" className="nav-link px-2 link-dark">Store</a></li>
+        {/* <li><a href="/" className="nav-link px-2 link-secondary">Home</a></li> */}
+        {/* <li><a href="/" className="nav-link px-2 link-dark">Store</a></li> */}
         <li><a href="/" className="nav-link px-2 link-dark">Collections</a></li>
         <li><a href="/" className="nav-link px-2 link-dark">Orders</a></li>
         <li><a href="/" className="nav-link px-2 link-dark">Contact</a></li>
@@ -18,9 +18,9 @@ function Header() {
       </ul>
 
       <div className="col-md-3 text-end">
-        <button type="button" className="btn btn-outline-primary me-2">Login</button>
+        {/* <button type="button" className="btn btn-outline-primary me-2">Login</button>
         <button type="button" className="btn btn-primary">Sign-up</button>
-        <p className="h6">Cart<span className="badge bg-info text-dark">2</span></p>
+        <p className="h6">Cart<span className="badge bg-info text-dark">2</span></p> */}
       </div>
     </header>
   </div>

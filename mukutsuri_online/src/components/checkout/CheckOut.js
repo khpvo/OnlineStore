@@ -173,6 +173,11 @@ function CheckOut() {
                   Save this information for next time
                 </label>
               </div>
+              <hr class="my-4" />
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">
+                Continue to checkout
+              </button>
             </form>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Cart, CheckOut, Footer, Navbar, Products } from "./components";
+import { Cart, CheckOut, Footer, Navbar, Products, Home } from "./components";
 import { commerce } from "./lib/commerce";
 
 function App() {
@@ -44,17 +44,22 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <div className="row mb-3">
+      <div className="row mb-0">
         <Navbar numberOfItemsInCart={cart.total_items} />
       </div>
-      <div className="row mt-5">
+      <div className="row mt-0">
         <div className="text-center mt-5">
         </div>
       </div>
       <div className="row">
         <Routes>
-          <Route
+        <Route
             path="/"
+            element={
+              <Home products={products}/>            }
+          />
+          <Route
+            path="/products"
             element={
               <Products products={products} onAddToCart={handleAddToCart} />
             }

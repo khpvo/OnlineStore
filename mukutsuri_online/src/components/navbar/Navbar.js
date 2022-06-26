@@ -8,7 +8,7 @@ function Navbar({ numberOfItemsInCart }) {
   const StyleLink = ({ isActive }) =>
     isActive ? activeClassName : inactiveClassName;
   return (
-    <nav className="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav className="navbar navbar-expand-md navbar-light fixed-top bg-light mb-0">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Mukutsuri Swimsuits
@@ -32,14 +32,24 @@ function Navbar({ numberOfItemsInCart }) {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className={StyleLink}>
+              <NavLink to="/products" className={StyleLink}>
                 Store
               </NavLink>
             </li>
           </ul>
           <ul className="d-flex navbar-nav mb-2 mb-md-0">
             <li className="nav-item">
-              {location.pathname === "/" ? (
+              <NavLink to="/" className={StyleLink}>
+                Log in
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/" className={StyleLink}>
+                Sign Up
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              {location.pathname === "/" || location.pathname === '/products' ? (
                 <NavLink to="/cart" className={StyleLink}>
                   <p className="h6">
                     Cart{" "}
