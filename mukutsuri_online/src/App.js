@@ -48,7 +48,7 @@ function App() {
         <Navbar numberOfItemsInCart={cart.total_items} />
       </div>
       <div className="row mt-5">
-        <div className="text-center">
+        <div className="text-center mt-5">
           <h1 className="display-4">Mukutsuri Swimsuits</h1>
         </div>
       </div>
