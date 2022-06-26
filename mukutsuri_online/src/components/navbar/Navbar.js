@@ -38,8 +38,8 @@ function Navbar({ numberOfItemsInCart }) {
             </li>
           </ul>
           <ul className="d-flex navbar-nav mb-2 mb-md-0">
-            {location.pathname === "/" && (
-              <li className="nav-item">
+            <li className="nav-item">
+              {location.pathname === "/" ? (
                 <NavLink to="/cart" className={StyleLink}>
                   <p className="h6">
                     Cart{" "}
@@ -48,8 +48,14 @@ function Navbar({ numberOfItemsInCart }) {
                     </span>
                   </p>
                 </NavLink>
-              </li>
-            )}
+              ) : (
+                <NavLink to="/" className={StyleLink}>
+                  <button className="h6 btn btn-sm btn-info">
+                    Continue Shopping
+                  </button>
+                </NavLink>
+              )}
+            </li>
           </ul>
         </div>
       </div>

@@ -1,7 +1,11 @@
 import React from "react";
 import Product from "./product/Product";
+import Spinner from "../spinner/Spinner";
 
 function Products({products, onAddToCart}) {
+  if (!products.length) {
+    return <Spinner/>
+  }
   return (
     <div className="container">
       <div className="row">

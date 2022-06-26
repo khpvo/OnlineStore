@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Cart, CheckOut, Footer, Navbar, Products } from "./components";
 import { commerce } from "./lib/commerce";
 
@@ -49,7 +49,6 @@ function App() {
       </div>
       <div className="row mt-5">
         <div className="text-center mt-5">
-          <h1 className="display-4">Mukutsuri Swimsuits</h1>
         </div>
       </div>
       <div className="row">

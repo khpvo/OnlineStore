@@ -16,8 +16,16 @@ function CartItem({ item, handleUpdateCart, handleRemoveFromCart }) {
 
       <div className="card-body text-muted">
         <h5 className="card-title">{item.name}</h5>
-        <p className="card-text"><strong>Number:</strong>{item.quantity}</p>
-        <p className="card-text"><strong>Price:</strong>{item.line_total.formatted_with_symbol}</p>
+        <p className="card-text d-flex justify-content-between">
+          <span>Number:</span>
+          <strong className="ml-5">{item.quantity}</strong>
+        </p>
+        <p className="card-text d-flex justify-content-between">
+          <span>Price:</span>
+          <strong className="ml-5">
+            {item.line_total.formatted_with_symbol}
+          </strong>
+        </p>
       </div>
 
       <div className="card-body btn-group">
