@@ -29,7 +29,7 @@ function App() {
 
   const handleRemoveFromCart = async (productId) => {
     const { cart } = commerce.cart.remove(productId);
-    setCart(cart);
+    fetchCart();
   };
 
   const handleEmptyCart = async () => {

@@ -59,7 +59,7 @@ function Navbar({ numberOfItemsInCart }) {
                   </p>
                 </NavLink>
               ) : (
-                <NavLink to="/" className={StyleLink}>
+                <NavLink to="/products" className={StyleLink}>
                   <button className="h6 btn btn-sm btn-info">
                     Continue Shopping
                   </button>
