@@ -12,19 +12,19 @@ function Cart({
   const EmptyCart = () => (
     <div className="col-md-5 col-lg-4 mx-auto">
       <h4 className="d-flex justify-content-around align-items-center mb-3">
-        <span className="text-primary">Your cart</span>
-        <span className="badge bg-primary rounded-pill">0</span>
+        <span className="text-muted display-5">Your cart</span>
+        <span className="badge bg-secondary"><p className="display-6 text-white">0 Items</p></span>
       </h4>
       <ul className="list-group mb-3">
         <li className="list-group-item d-flex justify-content-between lh-sm">
           <div>
-            <h4 className="my-0">Cart is empty</h4>
+            <h4 className="my-0 text-muted">Cart is empty</h4>
             <hr className="my-4" />
-            <Link className="w-100 btn btn-primary btn-lg" to="/">
+            <Link className="w-100 btn btn-primary btn-lg" to="/products">
               Go shopping
             </Link>
           </div>
-          <span className="text-muted">$0</span>
+          <span className="badge badge-sm bg-danger text-white"><p className="display-6">UGX 0</p> </span>
         </li>
       </ul>
     </div>
